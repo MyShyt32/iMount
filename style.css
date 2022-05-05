@@ -1,1 +1,59 @@
 
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: black; */
+    /* color: white; */
+}
+
+nav{
+    display: flex;
+    background-color: rgb(93, 93, 93);
+    color: white;
+    padding: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    left: 0;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(93, 93, 93);
+    color: white;
+}
+
+.footerMenus{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footerMenu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.fMenuTitle{
+    font-size: 16px;
+}
+
+.fMenuList{
+    list-style: none;
+    padding: 0;
+}
+
+.fMenuItem{
+    padding-bottom: 10px;
+}
+
+.fMenuItemLink{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+}
