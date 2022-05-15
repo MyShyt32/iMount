@@ -1,4 +1,9 @@
-body{
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+html, body{
     padding: 0;
     margin: 0;
     /* background-color: black; */
@@ -43,9 +48,16 @@ nav{
 }
 
 footer {
-    display: flex;
+    /* display: flex; */
     background-color: rgb(93, 93, 93);
     color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* height: 100px; */
+    width: 100%;
+    overflow: hidden;
+
 }
 
 .footerMenus{
