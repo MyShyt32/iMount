@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>iMount</title>
+</head>
+<body>
+    <nav id="nav" class="navBar">
+        <a class="logoLink" href="index.html">
+            <h1 class="logo">iMount</h1>
+        </a>
+    </nav>
+    <div class="container">
+       <div class="container-form">
+           <form action="#">
+                <h2 class="heading">Book Me</h2>
+                <input type="text" name="_honey" style="display:none">
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
+                <input type="hidden" name="_autoresponse" value="your custom message">
+                <input type="hidden" name="_next" value="https://imount.ga/booking.html">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <label for="booking-date">Date:</label>
+                <input type="date" name="booking-date" id="booking-date">
+                <label for="booking-time">Time:</label>
+                <input type="time" name="booking-time" id="booking-time">
+                <input type="text" name="tv-size" id="tv-size" placeholder="T.V size in inches" required>
+                <label for="is-mount-needed">Do you need a mount?</label>
+                <select name="is-mount-needed" id="is-mount-needed" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <textarea name="message" rows="2" placeholder="Additional questions or requirements"></textarea>
+                <button type="submit">Book</button>
+           </form>
+       </div>
+    </div>
+    <footer id="footer">
+        <div class="footerMenus">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Hours:</h1>
+                <ul class="fMenuList">
+                    <li class="fMenuItem">Mon - Thu: 2pm - 10pm</li>
+                    <li class="fMenuItem">Fri - Sat: 9am - 10pm</li>                    
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Information</h1>
+                <ul class="fMenuList">
+                    <li class="fMenuItem">
+                        <a class="fMenuItemLink" href="/booking.html">Book Me!</a>
+                    </li>
+                    <li class="fMenuItem">
+                        <a class="fMenuItemLink" href="/about.html">About Us</a>
+                    </li>
+                    <li class="fMenuItem">
+                        <a class="fMenuItemLink" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+    <script src="./style.css"></script>
+</body>
+</html>
