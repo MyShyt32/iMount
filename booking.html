@@ -13,31 +13,60 @@
             <h1 class="logo">iMount</h1>
         </a>
     </nav>
-    <div class="container">
-       <div class="container-form">
-           <form action="#">
-                <h2 class="heading">Book Me</h2>
-                <input type="text" name="_honey" style="display:none">
-                <!-- <input type="hidden" name="_captcha" value="false"> -->
-                <input type="hidden" name="_autoresponse" value="your custom message">
-                <input type="hidden" name="_next" value="https://imount.ga/booking.html">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <label for="booking-date">Date:</label>
-                <input type="date" name="booking-date" id="booking-date">
-                <label for="booking-time">Time:</label>
-                <input type="time" name="booking-time" id="booking-time">
-                <input type="text" name="tv-size" id="tv-size" placeholder="T.V size in inches" required>
-                <label for="is-mount-needed">Do you need a mount?</label>
-                <select name="is-mount-needed" id="is-mount-needed" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-                <textarea name="message" rows="2" placeholder="Additional questions or requirements"></textarea>
-                <button type="submit">Book</button>
-           </form>
-       </div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="container-form">
+                <form action="https://formsubmit.co/c1c37dfed91e85c8eb27a428b840b284" method="POST">
+                    <input type="hidden" name="_subject" value="New booking!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_autoresponse" value="Your appointment has been booked and is awaiting confirmation. Thank you for using our service!">
+                    <div class="col">
+                        <div class="row">
+                            <h2 class="heading">Book Me</h2>
+                        </div>
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
+                        <input type="hidden" name="_autoresponse" value="your custom message">
+                        <input type="hidden" name="_next" value="https://imount.ga/thanks.html">
+                        <div class="row">
+                            <div class="row-item">
+                                <input class="name-input" type="text" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-item">
+                                <input class="email-input" type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="date-lbl" for="booking-date">Date:</label>
+                            <input class="date-input" type="date" name="booking-date" id="booking-date" required>
+                        </div>
+                        <div class="row">
+                            <label class="time-lbl" for="booking-time">Time:</label>
+                            <input class="time-input" type="time" name="booking-time" id="booking-time" required>
+                        </div>
+                        <div class="row">
+                            <input class="tv-size" type="text" name="tv-size" id="tv-size" placeholder="T.V size in inches" required>
+                        </div>
+                        <div class="row">
+                            <!-- <label class="mount-needed-lbl" for="is-mount-needed">Do you need a mount?</label> -->
+                            <select class="mount-needed-select" name="is-mount-needed" id="is-mount-needed" required>
+                                <option value="">--Do you need a mount?--</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <textarea class="textarea" name="message" rows="2" placeholder="Additional questions or comments"></textarea>
+                        </div>
+                        <div class="row">
+                            <button class="btn" type="submit">Book</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <footer id="footer">
         <div class="footerMenus">
