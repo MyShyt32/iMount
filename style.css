@@ -1,20 +1,19 @@
 html{
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 html, body{
     padding: 0;
     margin: 0;
-    /* background-color: black; */
-    /* color: white; */
 }
+
 
 nav{
     display: flex;
     background-color: rgb(93, 93, 93);
     color: white;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 .logoLink{
@@ -27,6 +26,39 @@ nav{
 .logo{
     left: 0;
     padding: 0;
+}
+
+.content-wrapper{
+    margin: 10px;
+    padding: 15px;
+}
+
+.container{
+    display: flex;
+    border: 1px solid rgba(93, 93, 93, .3);
+    box-shadow: 10px 10px 10px 0 rgba(93, 93, 93, .3);
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.row-item{
+    padding-right: 10px;
+}
+
+.header{
+    display: flex;
 }
 
 .titleDiv{
@@ -48,29 +80,28 @@ nav{
 }
 
 footer {
-    /* display: flex; */
+    justify-content: space-between;
     background-color: rgb(93, 93, 93);
     color: white;
     position: absolute;
     left: 0;
     bottom: 0;
-    /* height: 100px; */
-    width: 100%;
+    right: 0;
+    /* height: 200px; */
+    /* width: 100%; */
     overflow: hidden;
-
+    padding: 20px 50px;
 }
 
 .footerMenus{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
 }
 
 .footerMenu{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
-    padding: 20px;
 }
 
 .fMenuTitle{
